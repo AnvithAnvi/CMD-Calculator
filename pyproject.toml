@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calc-cli"
+version = "1.0.0"
+requires-python = ">=3.9"
+description = "CLI calculator with tests and 100% coverage"
+readme = "README.md"
+
+[tool.setuptools.packages.find]
+include = ["calc*"]
+
+[project.scripts]
+calc = "calc.cli:main"
